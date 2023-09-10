@@ -60,10 +60,10 @@ function generatePassword() {
   var finalCharacterChoices = "";
   var finalPassword = "";
 
-  if (includeLowercase = true) { finalCharacterChoices += lowerCase };
-  if (includeUppercase = true) { finalCharacterChoices += upperCase };
-  if (includeNumeric = true) { finalCharacterChoices += numbers };
-  if (includeSpecialCharacters = true) { finalCharacterChoices += specialCharacters };
+  if (includeLowercase == true) { finalCharacterChoices += lowerCase };
+  if (includeUppercase == true) { finalCharacterChoices += upperCase };
+  if (includeNumeric == true) { finalCharacterChoices += numbers };
+  if (includeSpecialCharacters == true) { finalCharacterChoices += specialCharacters };
 
   // WHEN all prompts are answered
   // THEN a password is generated that matches the selected criteria
@@ -72,6 +72,8 @@ function generatePassword() {
   for (var index = 0; index < passwordLength; index++) {
     var pass = Math.floor(Math.random() * finalCharacterChoices.length)
     finalPassword = finalPassword + finalCharacterChoices[pass]
-    return finalPassword
   }
+
+  return finalPassword;
+
 }
