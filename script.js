@@ -67,7 +67,7 @@ function generatePassword() {
 
   // WHEN all prompts are answered
   // THEN a password is generated that matches the selected criteria
-  // WHEN the password is generated
+  // WHEN the password is generated13
   // THEN the password is either displayed in an alert or written to the page
   for (var index = 0; index < passwordLength; index++) {
     var pass = Math.floor(Math.random() * finalCharacterChoices.length)
